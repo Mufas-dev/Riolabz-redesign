@@ -1,47 +1,73 @@
-import { Menu } from "lucide-react";
+import { Menu, ArrowRight } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <header className="absolute top-0 left-0 w-full z-50">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="mt-8 h-20 bg-white rounded-2xl shadow-xl border border-slate-200 flex items-center justify-between px-8">
+        <div className="h-24 flex items-center justify-between">
 
-          <h1 className="text-3xl font-bold text-slate-900">
-            Rio<span className="text-blue-600">labz</span>
+          {/* Logo */}
+
+          <h1 className="text-4xl font-black tracking-tight text-slate-900">
+            Rio
+            <span className="text-blue-600">
+              labz
+            </span>
           </h1>
 
-          <nav className="hidden lg:flex gap-10 text-slate-700 font-medium">
+          {/* Desktop Menu */}
 
-            <a href="#">Home</a>
+          <nav className="hidden lg:flex items-center gap-10">
 
-            <a href="#">Services</a>
+            {[
+              "Home",
+              "Services",
+              "Solutions",
+              "Portfolio",
+              "About",
+              "Contact",
+            ].map((item) => (
+              <a
+                key={item}
+                href="#"
+                className="group relative text-[15px] font-semibold text-slate-700 transition duration-300 hover:text-blue-600"
+              >
+                {item}
 
-            <a href="#">Solutions</a>
+                <span className="absolute left-0 -bottom-2 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
 
-            <a href="#">Portfolio</a>
-
-            <a href="#">About</a>
-
-            <a href="#">Contact</a>
+              </a>
+            ))}
 
           </nav>
 
-          <button className="hidden lg:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl transition">
+          {/* CTA */}
+
+          <button className="hidden lg:flex items-center gap-2 rounded-xl bg-linear-to-r from-blue-600 to-sky-500 px-7 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
 
             Get Started
 
+            <ArrowRight
+              size={18}
+              className="transition group-hover:translate-x-1"
+            />
+
           </button>
 
-          <button className="lg:hidden">
+          {/* Mobile */}
 
-            <Menu />
+          <button className="rounded-lg p-2 transition hover:bg-slate-100 lg:hidden">
+
+            <Menu size={26} />
 
           </button>
 
         </div>
 
       </div>
+
     </header>
   );
 };
