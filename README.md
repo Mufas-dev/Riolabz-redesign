@@ -1,16 +1,139 @@
-# React + Vite
+# 🚀 Riolabz Website Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern UI/UX redesign of the Riolabz website built as part of a frontend design assessment.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+riolabz-redesign-lilac.vercel.app
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/Mufas-dev/Riolabz-redesign
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📖 Overview
+
+This project is a complete redesign of the Riolabz website with a fresh and modern interface.
+
+The goal was to improve the overall user experience while creating a professional design suitable for an IT company.
+
+The redesign focuses on:
+
+- Modern and clean interface
+- Better visual hierarchy
+- Responsive layout
+- Professional typography
+- Improved user experience
+- Smooth animations
+- Mobile-friendly design
+
+---
+
+## ✨ Features
+
+- Modern Landing Page
+- Responsive Navigation
+- Hero Section
+- Services Section
+- About Section
+- Portfolio Section
+- Contact Section
+- Footer
+- Responsive Design
+- Smooth UI Animations
+
+---
+
+## 🛠 Tech Stack
+
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── Services.jsx
+│   ├── About.jsx
+│   ├── Portfolio.jsx
+│   ├── Contact.jsx
+│   └── Footer.jsx
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Mufas-dev/Riolabz-redesign.git
+```
+
+Go to the project
+
+```bash
+cd Riolabz-redesign
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 📱 Responsive
+
+- Desktop
+- Tablet
+- Mobile
+
+---
+
+## 🎯 Project Objective
+
+This redesign was created as part of a UI/UX machine test.
+
+Instead of copying the original Riolabz website, the project presents a fresh visual direction while maintaining a professional software company identity.
+
+---
+
+## 👨‍💻 Developer
+
+**Muhammed Mufas**
+
+GitHub:
+https://github.com/Mufas-dev
+
+---
+
+## 📄 License
+
+This project was created for educational and assessment purposes.
